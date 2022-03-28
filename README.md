@@ -9,3 +9,5 @@ A website to showcase my projects and contact info.
 
 ## Website
 https://yoli19.github.io/personal-portfolio/
+
+![here is what the webpage looks like](./assets/images/site-screenshot.png)
