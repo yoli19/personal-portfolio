@@ -85,6 +85,7 @@ section {
     margin: 0;
     text-shadow: 10px 10px 15px rgba(255, 255, 255, 1);
     letter-spacing: 0.5em;
+    text-align: center;
 }
 
 .section-title {
@@ -171,4 +172,43 @@ section {
 .contact-info a {
     color: var(--secondary-color);
     text-decoration: none;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header nav ul li a {
+        font-size: 2.5vw;
+    }
+
+    .project-title h2 {
+        font-size: 2.5vw;
+    }
+
+    .projects {
+        width: 80%;
+    }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    .projects {
+        width: 85%;
+    }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    header {
+        position: relative;
+        justify-content: center;
+    }
+
+    .projects {
+        width: 100%;
+    }
+
+    .project:not(:first-child) {
+        flex: auto;
+        width: 100%;
+    }
 }
